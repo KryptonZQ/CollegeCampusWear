@@ -9,7 +9,7 @@ const productData = {
     price: 59.99,
     college: "Stanford",
     category: "Hoodies",
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect fill='%23f5f5f5' width='400' height='500'/%3E%3Cpath d='M 100 150 L 80 200 L 80 400 L 150 400 L 150 250 L 200 250 L 200 400 L 250 400 L 250 250 L 300 250 L 300 400 L 370 400 L 370 200 L 350 150 Z' fill='%234F46E5' stroke='%23333' stroke-width='2'/%3E%3Ccircle cx='140' cy='140' r='35' fill='%234F46E5' stroke='%23333' stroke-width='2'/%3E%3Cpath d='M 140 110 Q 120 100 100 105' stroke='%234F46E5' stroke-width='3' fill='none'/%3E%3C/svg%3E",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect fill='%23f0f0f0' width='400' height='500'/%3E%3Cellipse cx='200' cy='100' rx='60' ry='65' fill='%234F46E5'/%3E%3Cpath d='M 140 140 L 120 200 Q 120 220 140 230 L 140 420 L 180 420 L 180 260 L 200 260 L 200 420 L 220 420 L 220 260 L 240 260 L 240 420 L 280 420 L 280 230 Q 300 220 300 200 L 280 140' fill='%234F46E5' stroke='%23333' stroke-width='1.5'/%3E%3Cpath d='M 140 150 L 80 160 L 80 280 L 140 250' fill='%234F46E5'/%3E%3Cpath d='M 260 150 L 320 160 L 320 280 L 260 250' fill='%234F46E5'/%3E%3Cline x1='190' y1='100' x2='160' y2='130' stroke='%23333' stroke-width='2'/%3E%3Cline x1='210' y1='100' x2='240' y2='130' stroke='%23333' stroke-width='2'/%3E%3C/svg%3E",
     description:
       "Our signature college hoodie is the perfect way to rep your campus. Made from premium 100% cotton blend fabric with a soft fleece interior, this hoodie offers unmatched comfort and durability. Features embroidered college details and a modern oversized fit.",
     details: [
