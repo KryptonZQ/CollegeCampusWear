@@ -34,7 +34,7 @@ const productData = {
     price: 34.99,
     college: "Harvard",
     category: "T-Shirts",
-    image: "https://picsum.photos/800/800?random=2",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800'%3E%3Crect fill='%23EC4899' width='800' height='800'/%3E%3Ctext x='50%25' y='50%25' font-size='200' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'%3E🎨%3C/text%3E%3C/svg%3E",
     description:
       "Make a statement with our oversized graphic tee featuring bold college-inspired artwork. Crafted from breathable 100% organic cotton, it's perfect for casual wear and comfortable all day long.",
     details: [
@@ -59,7 +59,7 @@ const productData = {
     price: 29.99,
     college: "MIT",
     category: "Caps",
-    image: "https://picsum.photos/800/800?random=3",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800'%3E%3Crect fill='%2306B6D4' width='800' height='800'/%3E%3Ctext x='50%25' y='50%25' font-size='200' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'%3E🧢%3C/text%3E%3C/svg%3E",
     description:
       "Classic vintage-style cap with embroidered college logo. Perfect for sunny days and casual outings. Features adjustable strap for the perfect fit.",
     details: [
@@ -84,7 +84,7 @@ const productData = {
     price: 44.99,
     college: "Yale",
     category: "Bags",
-    image: "https://picsum.photos/800/800?random=4",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800'%3E%3Crect fill='%238B5CF6' width='800' height='800'/%3E%3Ctext x='50%25' y='50%25' font-size='200' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'%3E👜%3C/text%3E%3C/svg%3E",
     description:
       "Spacious and stylish tote bag perfect for campus life. Made from durable canvas material with reinforced handles and embroidered college details.",
     details: [
@@ -108,7 +108,7 @@ const productData = {
     price: 54.99,
     college: "Princeton",
     category: "Sweatshirts",
-    image: "https://picsum.photos/800/800?random=5",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800'%3E%3Crect fill='%23F59E0B' width='800' height='800'/%3E%3Ctext x='50%25' y='50%25' font-size='200' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'%3E🧶%3C/text%3E%3C/svg%3E",
     description:
       "Elevated crewneck sweatshirt with intricate embroidered college insignia. Perfect for layering or wearing solo, this piece combines style and comfort.",
     details: [
@@ -133,7 +133,7 @@ const productData = {
     price: 9.99,
     college: "Berkeley",
     category: "Stickers",
-    image: "https://picsum.photos/800/800?random=6",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800'%3E%3Crect fill='%2310B981' width='800' height='800'/%3E%3Ctext x='50%25' y='50%25' font-size='200' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'%3E⭐%3C/text%3E%3C/svg%3E",
     description:
       "Decorate your laptop, water bottle, or anywhere with our vibrant college-themed sticker pack. 10 unique designs celebrating campus life.",
     details: [
