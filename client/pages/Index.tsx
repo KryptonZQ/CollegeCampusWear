@@ -176,7 +176,7 @@ export default function Index() {
 
             <div className="relative h-96 sm:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1556821552-7f41c5d440db?w=800&h=800&fit=crop&q=80"
+                src="https://images.unsplash.com/photo-1574456566174-7e94e01a2591?w=800&h=800&fit=crop&q=80"
                 alt="Hero"
                 className="w-full h-full object-cover"
               />
