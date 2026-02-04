@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ShoppingCart, Mail, MapPin, Instagram, Twitter } from "lucide-react";
+import { ShoppingCart, Mail, MapPin, Instagram, Twitter, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const products = [
@@ -83,38 +83,35 @@ export default function Index() {
 
   const handleAddToCart = (productId: number) => {
     setCart([...cart, productId]);
-    // Simple toast-like feedback
-    const event = new CustomEvent("addToCart", { detail: { productId } });
-    window.dispatchEvent(event);
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background text-white overflow-hidden">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white border-b border-gray-200">
+      <nav className="fixed top-0 z-50 w-full bg-background/80 backdrop-blur-md border-b border-primary/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
             <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">CC</span>
+              <span className="text-foreground font-bold text-sm">CC</span>
             </div>
-            <span className="font-display font-bold text-lg text-foreground hidden sm:inline">
-              CampusWear
+            <span className="font-display font-bold text-lg text-primary hidden sm:inline">
+              CAMPUSWEAR
             </span>
           </div>
           <div className="flex items-center gap-6">
-            <a href="#products" className="text-sm font-medium text-gray-600 hover:text-foreground transition">
-              Shop
+            <a href="#products" className="text-sm font-medium text-gray-300 hover:text-primary transition">
+              Products
             </a>
-            <a href="#offers" className="text-sm font-medium text-gray-600 hover:text-foreground transition">
-              Deals
+            <a href="#offers" className="text-sm font-medium text-gray-300 hover:text-primary transition">
+              Bundles
             </a>
-            <a href="#contact" className="text-sm font-medium text-gray-600 hover:text-foreground transition">
+            <a href="#contact" className="text-sm font-medium text-gray-300 hover:text-primary transition">
               Contact
             </a>
             <div className="relative">
-              <ShoppingCart className="w-5 h-5 text-foreground" />
+              <ShoppingCart className="w-5 h-5 text-primary" />
               {cart.length > 0 && (
-                <span className="absolute -top-2 -right-2 bg-secondary text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">
+                <span className="absolute -top-2 -right-2 bg-secondary text-foreground text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">
                   {cart.length}
                 </span>
               )}
@@ -124,21 +121,31 @@ export default function Index() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-secondary/10 to-primary/5" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32 relative">
+      <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        {/* Background gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-background to-background" />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-              <div className="space-y-4">
-                <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-6xl leading-tight text-foreground">
+              <div className="space-y-6">
+                <div className="inline-block">
+                  <div className="px-4 py-2 rounded-full border border-primary/50 bg-primary/10 text-primary text-sm font-semibold">
+                    ✨ NEXT GEN CAMPUS WEAR
+                  </div>
+                </div>
+
+                <h1 className="font-display font-black text-5xl sm:text-7xl leading-tight text-white">
                   Rep Your{" "}
-                  <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                    College Style
+                  <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-pulse">
+                    College
                   </span>
                 </h1>
-                <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-lg">
-                  Campus wear, redefined. Trendy hoodies, graphic tees, and accessories designed for college
-                  students who want to express their campus pride in style.
+
+                <p className="text-lg sm:text-xl text-gray-400 leading-relaxed max-w-lg">
+                  Bold styles. Premium quality. Designed for students who stand out. Join thousands of college students already repping their campus in style.
                 </p>
               </div>
 
@@ -146,83 +153,88 @@ export default function Index() {
                 <Link to="#products">
                   <Button
                     size="lg"
-                    className="w-full sm:w-auto bg-gradient-to-r from-primary to-secondary hover:shadow-lg transition-all duration-300"
+                    className="w-full sm:w-auto bg-gradient-to-r from-primary to-secondary hover:shadow-2xl hover:shadow-primary/50 transition-all duration-300 text-foreground font-bold"
                   >
-                    Shop Now
+                    Explore Collection <ChevronRight className="ml-2 w-5 h-5" />
                   </Button>
                 </Link>
                 <Link to="#offers">
-                  <Button variant="outline" size="lg" className="w-full sm:w-auto">
-                    View Deals
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="w-full sm:w-auto border-primary/50 text-primary hover:bg-primary/10"
+                  >
+                    View Bundles
                   </Button>
                 </Link>
               </div>
 
-              <div className="flex items-center gap-8 pt-4">
-                <div>
-                  <div className="text-2xl font-bold text-foreground">10K+</div>
-                  <p className="text-sm text-gray-600">Students Reppin'</p>
+              <div className="flex items-center gap-12 pt-8">
+                <div className="space-y-1">
+                  <div className="text-3xl font-bold text-primary">10K+</div>
+                  <p className="text-sm text-gray-400">Happy Students</p>
                 </div>
-                <div>
-                  <div className="text-2xl font-bold text-foreground">50+</div>
-                  <p className="text-sm text-gray-600">Colleges</p>
+                <div className="space-y-1">
+                  <div className="text-3xl font-bold text-primary">50+</div>
+                  <p className="text-sm text-gray-400">Top Colleges</p>
                 </div>
-                <div>
-                  <div className="text-2xl font-bold text-foreground">100%</div>
-                  <p className="text-sm text-gray-600">Quality</p>
+                <div className="space-y-1">
+                  <div className="text-3xl font-bold text-primary">24h</div>
+                  <p className="text-sm text-gray-400">Fast Shipping</p>
                 </div>
               </div>
             </div>
 
-            <div className="relative h-96 sm:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative h-96 sm:h-[500px] rounded-2xl overflow-hidden group">
               <img
-                src="https://images.unsplash.com/photo-1543163521-9733539c2d7f?w=800&h=800&fit=crop&q=80"
+                src="https://cdn.shopify.com/s/files/1/0570/1674/2601/products/1_750x.jpg?v=1630703840"
                 alt="Hero"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 to-transparent" />
+              <div className="absolute inset-0 border border-primary/30 rounded-2xl" />
             </div>
           </div>
         </div>
       </section>
 
       {/* Products Section */}
-      <section id="products" className="py-20 sm:py-32 bg-gradient-to-b from-gray-50 to-white">
+      <section id="products" className="py-24 bg-gradient-to-b from-background via-background to-primary/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-4 mb-16">
-            <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-foreground">
-              Featured Products
+          <div className="text-center space-y-4 mb-20">
+            <h2 className="font-display font-bold text-4xl sm:text-5xl text-white">
+              Featured Collection
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Discover our curated collection of college merchandise
+            <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+              Discover our curated selection of premium college merchandise
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {products.map((product) => (
               <Link key={product.id} to={`/product/${product.id}`}>
-                <div className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer h-full flex flex-col">
-                  <div className="relative h-64 overflow-hidden bg-gray-100">
+                <div className="group bg-card/50 backdrop-blur-sm border border-primary/20 rounded-xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20 h-full flex flex-col">
+                  <div className="relative h-64 overflow-hidden bg-background">
                     <img
                       src={product.image}
                       alt={product.name}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     />
-                    <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-semibold">
+                    <div className="absolute top-4 right-4 bg-primary text-foreground px-3 py-1 rounded-lg text-xs font-bold">
                       {product.college}
                     </div>
                   </div>
-                  <div className="p-4 sm:p-6 flex-1 flex flex-col">
+                  <div className="p-6 flex-1 flex flex-col">
                     <div className="flex-1">
                       <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-2">
                         {product.category}
                       </p>
-                      <h3 className="font-semibold text-lg text-foreground mb-2 group-hover:text-primary transition">
+                      <h3 className="font-semibold text-lg text-white group-hover:text-primary transition">
                         {product.name}
                       </h3>
                     </div>
-                    <div className="flex items-center justify-between pt-4 border-t border-gray-200">
-                      <p className="font-display font-bold text-2xl text-foreground">
+                    <div className="flex items-center justify-between pt-6 border-t border-primary/20">
+                      <p className="font-display font-bold text-2xl text-primary">
                         ${product.price.toFixed(2)}
                       </p>
                       <button
@@ -230,7 +242,7 @@ export default function Index() {
                           e.preventDefault();
                           handleAddToCart(product.id);
                         }}
-                        className="bg-gradient-to-r from-primary to-secondary text-white p-2 rounded-lg hover:shadow-lg transition-all duration-300"
+                        className="bg-gradient-to-r from-primary to-secondary text-foreground p-2 rounded-lg hover:shadow-lg hover:shadow-primary/50 transition-all duration-300"
                       >
                         <ShoppingCart className="w-5 h-5" />
                       </button>
@@ -243,15 +255,15 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Offers Section */}
-      <section id="offers" className="py-20 sm:py-32 bg-white">
+      {/* Bundles Section */}
+      <section id="offers" className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-4 mb-16">
-            <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-foreground">
+          <div className="text-center space-y-4 mb-20">
+            <h2 className="font-display font-bold text-4xl sm:text-5xl text-white">
               Exclusive Bundles
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Save big with our curated bundle deals
+            <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+              Save more with our premium bundle deals
             </p>
           </div>
 
@@ -259,16 +271,16 @@ export default function Index() {
             {offers.map((offer, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-8 hover:border-primary transition-all duration-300 group"
+                className="relative bg-gradient-to-br from-primary/10 to-secondary/10 border border-primary/30 rounded-xl p-8 hover:border-primary/60 transition-all duration-300 group hover:shadow-2xl hover:shadow-primary/30"
               >
-                <div className="absolute -top-4 right-8 bg-secondary text-white px-4 py-1 rounded-full text-sm font-bold">
+                <div className="absolute -top-4 right-8 bg-secondary text-foreground px-4 py-1 rounded-full text-sm font-bold">
                   Save ${offer.savings}
                 </div>
                 <div className="pt-4">
-                  <h3 className="font-display font-bold text-2xl text-foreground mb-2">
+                  <h3 className="font-display font-bold text-2xl text-white mb-2">
                     {offer.title}
                   </h3>
-                  <p className="text-gray-600 mb-6">{offer.description}</p>
+                  <p className="text-gray-400 mb-6">{offer.description}</p>
 
                   <div className="space-y-3 mb-6">
                     <div className="flex items-center justify-between">
@@ -287,8 +299,8 @@ export default function Index() {
                     </div>
                   </div>
 
-                  <Button className="w-full bg-gradient-to-r from-primary to-secondary hover:shadow-lg transition-all duration-300">
-                    Add Bundle to Cart
+                  <Button className="w-full bg-gradient-to-r from-primary to-secondary hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 text-foreground font-bold">
+                    Add Bundle
                   </Button>
                 </div>
               </div>
@@ -298,25 +310,25 @@ export default function Index() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 sm:py-32 bg-gradient-to-br from-foreground to-gray-900 text-white">
+      <section id="contact" className="py-24 bg-gradient-to-b from-background to-primary/5 border-t border-primary/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl">
+                <h2 className="font-display font-bold text-4xl sm:text-5xl text-white">
                   Get in Touch
                 </h2>
-                <p className="text-lg text-gray-300 leading-relaxed">
-                  Have questions about our products? Want to collaborate with us? We'd love to hear from you!
+                <p className="text-lg text-gray-400 leading-relaxed">
+                  Have questions? Want to collaborate? We're here to help you rep your college style.
                 </p>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
-                    <p className="font-semibold text-lg">Email</p>
-                    <a href="mailto:hello@campuswear.com" className="text-gray-300 hover:text-primary transition">
+                    <p className="font-semibold text-white">Email</p>
+                    <a href="mailto:hello@campuswear.com" className="text-gray-400 hover:text-primary transition">
                       hello@campuswear.com
                     </a>
                   </div>
@@ -324,57 +336,57 @@ export default function Index() {
                 <div className="flex items-start gap-4">
                   <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
-                    <p className="font-semibold text-lg">Address</p>
-                    <p className="text-gray-300">San Francisco, CA 94105</p>
+                    <p className="font-semibold text-white">Address</p>
+                    <p className="text-gray-400">San Francisco, CA 94105</p>
                   </div>
                 </div>
               </div>
 
               <div className="flex gap-4">
-                <a href="#" className="bg-primary hover:bg-opacity-90 text-white p-3 rounded-lg transition">
+                <a href="#" className="bg-primary hover:bg-opacity-90 text-foreground p-3 rounded-lg transition">
                   <Instagram className="w-5 h-5" />
                 </a>
-                <a href="#" className="bg-primary hover:bg-opacity-90 text-white p-3 rounded-lg transition">
+                <a href="#" className="bg-primary hover:bg-opacity-90 text-foreground p-3 rounded-lg transition">
                   <Twitter className="w-5 h-5" />
                 </a>
               </div>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-md rounded-xl p-8 border border-white/20">
+            <div className="bg-card/50 backdrop-blur-sm border border-primary/30 rounded-xl p-8">
               <form className="space-y-6">
                 <div>
-                  <label className="block text-sm font-semibold mb-2">Name</label>
+                  <label className="block text-sm font-semibold text-white mb-2">Name</label>
                   <input
                     type="text"
                     placeholder="Your name"
-                    className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-primary transition"
+                    className="w-full px-4 py-3 rounded-lg bg-background/50 border border-primary/20 text-white placeholder-gray-500 focus:outline-none focus:border-primary transition"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold mb-2">Email</label>
+                  <label className="block text-sm font-semibold text-white mb-2">Email</label>
                   <input
                     type="email"
                     placeholder="your@email.com"
-                    className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-primary transition"
+                    className="w-full px-4 py-3 rounded-lg bg-background/50 border border-primary/20 text-white placeholder-gray-500 focus:outline-none focus:border-primary transition"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold mb-2">College Name</label>
+                  <label className="block text-sm font-semibold text-white mb-2">College Name</label>
                   <input
                     type="text"
                     placeholder="Your college"
-                    className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-primary transition"
+                    className="w-full px-4 py-3 rounded-lg bg-background/50 border border-primary/20 text-white placeholder-gray-500 focus:outline-none focus:border-primary transition"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold mb-2">Message</label>
+                  <label className="block text-sm font-semibold text-white mb-2">Message</label>
                   <textarea
                     placeholder="Your message"
                     rows={4}
-                    className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-primary transition resize-none"
+                    className="w-full px-4 py-3 rounded-lg bg-background/50 border border-primary/20 text-white placeholder-gray-500 focus:outline-none focus:border-primary transition resize-none"
                   />
                 </div>
-                <Button className="w-full bg-gradient-to-r from-primary to-secondary hover:shadow-lg transition-all duration-300">
+                <Button className="w-full bg-gradient-to-r from-primary to-secondary hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 text-foreground font-bold">
                   Send Message
                 </Button>
               </form>
@@ -384,16 +396,16 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 py-12">
+      <footer className="bg-background border-t border-primary/20 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between mb-8">
-            <div className="flex items-center gap-2">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
               <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">CC</span>
+                <span className="text-foreground font-bold text-sm">CC</span>
               </div>
-              <span className="font-display font-bold text-white">CampusWear</span>
+              <span className="font-display font-bold text-primary">CAMPUSWEAR</span>
             </div>
-            <p className="text-sm">© 2024 CampusWear. All rights reserved.</p>
+            <p className="text-sm text-gray-500">© 2024 CampusWear. All rights reserved.</p>
           </div>
         </div>
       </footer>
