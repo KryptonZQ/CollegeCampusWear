@@ -10,7 +10,7 @@ const products = [
     price: 59.99,
     category: "Hoodies",
     college: "Stanford",
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect fill='%234F46E5' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='80' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'%3E👕%3C/text%3E%3C/svg%3E",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect fill='%23f5f5f5' width='400' height='500'/%3E%3Cpath d='M 100 150 L 80 200 L 80 400 L 150 400 L 150 250 L 200 250 L 200 400 L 250 400 L 250 250 L 300 250 L 300 400 L 370 400 L 370 200 L 350 150 Z' fill='%234F46E5' stroke='%23333' stroke-width='2'/%3E%3Ccircle cx='140' cy='140' r='35' fill='%234F46E5' stroke='%23333' stroke-width='2'/%3E%3Cpath d='M 140 110 Q 120 100 100 105' stroke='%234F46E5' stroke-width='3' fill='none'/%3E%3C/svg%3E",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const products = [
     price: 34.99,
     category: "T-Shirts",
     college: "Harvard",
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect fill='%23EC4899' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='80' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'%3E🎨%3C/text%3E%3C/svg%3E",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect fill='%23f5f5f5' width='400' height='500'/%3E%3Cpath d='M 120 120 L 100 180 L 100 420 L 180 420 L 180 220 L 220 220 L 220 420 L 300 420 L 300 180 L 280 120 Z' fill='%23FFFFFF' stroke='%23333' stroke-width='2'/%3E%3Crect x='130' y='140' width='140' height='60' fill='%23EC4899' rx='8'/%3E%3Ctext x='200' y='175' font-size='20' fill='%23FFFFFF' text-anchor='middle' font-weight='bold'%3ECAMPUS%3C/text%3E%3C/svg%3E",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const products = [
     price: 29.99,
     category: "Caps",
     college: "MIT",
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect fill='%2306B6D4' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='80' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'%3E🧢%3C/text%3E%3C/svg%3E",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect fill='%23f5f5f5' width='400' height='400'/%3E%3Cpath d='M 100 200 Q 100 120 200 100 Q 300 120 300 200' fill='%2306B6D4' stroke='%23333' stroke-width='2'/%3E%3Crect x='80' y='200' width='240' height='60' fill='%23333' stroke='%23333' stroke-width='2'/%3E%3Ctext x='200' y='235' font-size='24' fill='%23FFFFFF' text-anchor='middle' font-weight='bold'%3EMIT%3C/text%3E%3C/svg%3E",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const products = [
     price: 44.99,
     category: "Bags",
     college: "Yale",
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect fill='%238B5CF6' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='80' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'%3E👜%3C/text%3E%3C/svg%3E",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect fill='%23f5f5f5' width='400' height='500'/%3E%3Cpath d='M 120 80 L 120 380 Q 120 420 160 420 L 240 420 Q 280 420 280 380 L 280 80' fill='%238B5CF6' stroke='%23333' stroke-width='2'/%3E%3Cpath d='M 140 60 Q 140 40 160 40 L 240 40 Q 260 40 260 60' fill='%238B5CF6' stroke='%23333' stroke-width='2'/%3E%3Cpath d='M 150 50 L 150 30 Q 150 20 160 20 Q 170 20 170 30 L 170 50' stroke='%23333' stroke-width='2' fill='none'/%3E%3Cpath d='M 230 50 L 230 30 Q 230 20 240 20 Q 250 20 250 30 L 250 50' stroke='%23333' stroke-width='2' fill='none'/%3E%3C/svg%3E",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const products = [
     price: 54.99,
     category: "Sweatshirts",
     college: "Princeton",
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect fill='%23F59E0B' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='80' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'%3E🧶%3C/text%3E%3C/svg%3E",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect fill='%23f5f5f5' width='400' height='500'/%3E%3Cpath d='M 110 140 L 100 200 L 100 420 L 170 420 L 170 240 L 200 240 L 200 420 L 230 420 L 230 240 L 260 240 L 260 420 L 330 420 L 330 200 L 320 140 Z' fill='%23F59E0B' stroke='%23333' stroke-width='2'/%3E%3Ccircle cx='130' cy='130' r='32' fill='%23F59E0B' stroke='%23333' stroke-width='2'/%3E%3Ccircle cx='200' cy='115' r='25' fill='%23EC4899' stroke='%23333' stroke-width='1.5'/%3E%3C/svg%3E",
   },
   {
     id: 6,
@@ -50,7 +50,7 @@ const products = [
     price: 9.99,
     category: "Stickers",
     college: "Berkeley",
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect fill='%2310B981' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='80' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'%3E⭐%3C/text%3E%3C/svg%3E",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect fill='%23f5f5f5' width='400' height='400'/%3E%3Crect x='60' y='60' width='280' height='280' fill='%2310B981' rx='20' stroke='%23333' stroke-width='2'/%3E%3Cpath d='M 150 120 L 170 180 L 235 180 L 185 220 L 210 280 L 150 240 L 90 280 L 115 220 L 65 180 L 130 180 Z' fill='%23FFD700' stroke='%23333' stroke-width='1.5'/%3E%3Cpath d='M 250 140 L 260 165 L 288 165 L 265 180 L 275 205 L 250 190 L 225 205 L 235 180 L 212 165 L 240 165 Z' fill='%23FFD700'/%3E%3Cpath d='M 280 250 L 290 270 L 312 270 L 295 282 L 305 302 L 280 290 L 255 302 L 265 282 L 248 270 L 270 270 Z' fill='%23FFD700'/%3E%3C/svg%3E",
   },
 ];
 
