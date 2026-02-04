@@ -10,7 +10,7 @@ const products = [
     price: 59.99,
     category: "Hoodies",
     college: "Stanford",
-    image: "https://picsum.photos/400/400?random=1",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect fill='%234F46E5' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='80' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'%3E👕%3C/text%3E%3C/svg%3E",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const products = [
     price: 34.99,
     category: "T-Shirts",
     college: "Harvard",
-    image: "https://picsum.photos/400/400?random=2",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect fill='%23EC4899' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='80' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'%3E🎨%3C/text%3E%3C/svg%3E",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const products = [
     price: 29.99,
     category: "Caps",
     college: "MIT",
-    image: "https://picsum.photos/400/400?random=3",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect fill='%2306B6D4' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='80' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'%3E🧢%3C/text%3E%3C/svg%3E",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const products = [
     price: 44.99,
     category: "Bags",
     college: "Yale",
-    image: "https://picsum.photos/400/400?random=4",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect fill='%238B5CF6' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='80' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'%3E👜%3C/text%3E%3C/svg%3E",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const products = [
     price: 54.99,
     category: "Sweatshirts",
     college: "Princeton",
-    image: "https://picsum.photos/400/400?random=5",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect fill='%23F59E0B' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='80' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'%3E🧶%3C/text%3E%3C/svg%3E",
   },
   {
     id: 6,
@@ -50,7 +50,7 @@ const products = [
     price: 9.99,
     category: "Stickers",
     college: "Berkeley",
-    image: "https://picsum.photos/400/400?random=6",
+    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect fill='%2310B981' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' font-size='80' fill='white' text-anchor='middle' dominant-baseline='middle' font-weight='bold'%3E⭐%3C/text%3E%3C/svg%3E",
   },
 ];
 
