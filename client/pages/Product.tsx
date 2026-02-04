@@ -133,7 +133,7 @@ const productData = {
     price: 9.99,
     college: "Berkeley",
     category: "Stickers",
-    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&h=800&fit=crop&q=80",
+    image: "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=800&h=800&fit=crop&q=80",
     description:
       "Decorate your laptop, water bottle, or anywhere with our vibrant college-themed sticker pack. 10 unique designs celebrating campus life.",
     details: [
