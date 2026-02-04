@@ -34,7 +34,7 @@ const productData = {
     price: 34.99,
     college: "Harvard",
     category: "T-Shirts",
-    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=800&fit=crop",
+    image: "https://picsum.photos/800/800?random=2",
     description:
       "Make a statement with our oversized graphic tee featuring bold college-inspired artwork. Crafted from breathable 100% organic cotton, it's perfect for casual wear and comfortable all day long.",
     details: [
