@@ -174,12 +174,8 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="relative h-96 sm:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src="https://picsum.photos/600/600?random=hero"
-                alt="Hero"
-                className="w-full h-full object-cover"
-              />
+            <div className="relative h-96 sm:h-[500px] rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+              <div className="text-8xl">👕</div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
           </div>
