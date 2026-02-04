@@ -10,8 +10,7 @@ const products = [
     price: 59.99,
     category: "Hoodies",
     college: "Stanford",
-    image:
-      "https://images.unsplash.com/photo-1556821552-7f41c5d440db?w=400&h=400&fit=crop",
+    image: "https://picsum.photos/400/400?random=1",
   },
   {
     id: 2,
@@ -19,8 +18,7 @@ const products = [
     price: 34.99,
     category: "T-Shirts",
     college: "Harvard",
-    image:
-      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop",
+    image: "https://picsum.photos/400/400?random=2",
   },
   {
     id: 3,
@@ -28,8 +26,7 @@ const products = [
     price: 29.99,
     category: "Caps",
     college: "MIT",
-    image:
-      "https://images.unsplash.com/photo-1588195538326-c5b1e6f2e5c5?w=400&h=400&fit=crop",
+    image: "https://picsum.photos/400/400?random=3",
   },
   {
     id: 4,
@@ -37,8 +34,7 @@ const products = [
     price: 44.99,
     category: "Bags",
     college: "Yale",
-    image:
-      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=400&fit=crop",
+    image: "https://picsum.photos/400/400?random=4",
   },
   {
     id: 5,
@@ -46,8 +42,7 @@ const products = [
     price: 54.99,
     category: "Sweatshirts",
     college: "Princeton",
-    image:
-      "https://images.unsplash.com/photo-1556821552-7f41c5d440db?w=400&h=400&fit=crop",
+    image: "https://picsum.photos/400/400?random=5",
   },
   {
     id: 6,
@@ -55,8 +50,7 @@ const products = [
     price: 9.99,
     category: "Stickers",
     college: "Berkeley",
-    image:
-      "https://images.unsplash.com/photo-1578208541519-1e1e00e8d5b4?w=400&h=400&fit=crop",
+    image: "https://picsum.photos/400/400?random=6",
   },
 ];
 
