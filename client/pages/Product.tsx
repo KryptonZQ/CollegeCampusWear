@@ -9,7 +9,7 @@ const productData = {
     price: 59.99,
     college: "Stanford",
     category: "Hoodies",
-    image: "https://images.unsplash.com/photo-1556821552-7f41c5d440db?w=800&h=800&fit=crop",
+    image: "https://picsum.photos/800/800?random=1",
     description:
       "Our signature college hoodie is the perfect way to rep your campus. Made from premium 100% cotton blend fabric with a soft fleece interior, this hoodie offers unmatched comfort and durability. Features embroidered college details and a modern oversized fit.",
     details: [
