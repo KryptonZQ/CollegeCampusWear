@@ -34,7 +34,7 @@ const productData = {
     price: 34.99,
     college: "Harvard",
     category: "T-Shirts",
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect fill='%23f0f0f0' width='400' height='500'/%3E%3Cellipse cx='200' cy='80' rx='35' ry='30' fill='%23f0f0f0'/%3E%3Cpath d='M 130 100 L 110 180 L 110 420 L 170 420 L 170 240 L 200 240 L 200 420 L 230 420 L 230 240 L 260 240 L 260 420 L 320 420 L 300 180 L 270 100' fill='%23FFFFFF' stroke='%23333' stroke-width='2'/%3E%3Cpath d='M 130 110 L 60 120 L 60 260 L 130 200' fill='%23FFFFFF' stroke='%23333' stroke-width='1.5'/%3E%3Cpath d='M 270 110 L 340 120 L 340 260 L 270 200' fill='%23FFFFFF' stroke='%23333' stroke-width='1.5'/%3E%3Crect x='140' y='160' width='120' height='80' fill='%23EC4899' rx='8'/%3E%3Ctext x='200' y='205' font-size='32' fill='%23FFFFFF' text-anchor='middle' font-weight='bold'%3EH%3C/text%3E%3C/svg%3E",
+    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=800&fit=crop&q=80",
     description:
       "Make a statement with our oversized graphic tee featuring bold college-inspired artwork. Crafted from breathable 100% organic cotton, it's perfect for casual wear and comfortable all day long.",
     details: [
@@ -59,7 +59,7 @@ const productData = {
     price: 29.99,
     college: "MIT",
     category: "Caps",
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%23f0f0f0' width='400' height='300'/%3E%3Cellipse cx='200' cy='150' rx='140' ry='40' fill='%23333' stroke='%23222' stroke-width='1.5'/%3E%3Cpath d='M 100 150 Q 100 80 200 60 Q 300 80 300 150' fill='%2306B6D4' stroke='%23333' stroke-width='2'/%3E%3Cpath d='M 100 150 Q 100 85 200 65 Q 300 85 300 150' fill='none' stroke='%23333' stroke-width='1' stroke-dasharray='5,3'/%3E%3Cellipse cx='200' cy='150' rx='140' ry='35' fill='%23555' opacity='0.3'/%3E%3C/svg%3E",
+    image: "https://images.unsplash.com/photo-1588195538326-c5b1e6f2e5c5?w=800&h=800&fit=crop&q=80",
     description:
       "Classic vintage-style cap with embroidered college logo. Perfect for sunny days and casual outings. Features adjustable strap for the perfect fit.",
     details: [
@@ -84,7 +84,7 @@ const productData = {
     price: 44.99,
     college: "Yale",
     category: "Bags",
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect fill='%23f0f0f0' width='400' height='500'/%3E%3Cpath d='M 130 100 L 130 380 Q 130 420 170 420 L 230 420 Q 270 420 270 380 L 270 100' fill='%238B5CF6' stroke='%23333' stroke-width='2.5'/%3E%3Cline x1='130' y1='100' x2='270' y2='100' stroke='%23333' stroke-width='2'/%3E%3Cpath d='M 150 100 Q 140 40 170 30' fill='none' stroke='%23333' stroke-width='8' stroke-linecap='round'/%3E%3Cpath d='M 250 100 Q 260 40 230 30' fill='none' stroke='%23333' stroke-width='8' stroke-linecap='round'/%3E%3Cline x1='200' y1='100' x2='200' y2='420' stroke='%23333' stroke-width='1.5' stroke-dasharray='5,5'/%3E%3C/svg%3E",
+    image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&h=800&fit=crop&q=80",
     description:
       "Spacious and stylish tote bag perfect for campus life. Made from durable canvas material with reinforced handles and embroidered college details.",
     details: [
@@ -108,7 +108,7 @@ const productData = {
     price: 54.99,
     college: "Princeton",
     category: "Sweatshirts",
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect fill='%23f0f0f0' width='400' height='500'/%3E%3Cellipse cx='200' cy='85' rx='40' ry='35' fill='%23f0f0f0'/%3E%3Cpath d='M 120 110 L 100 200 L 100 420 L 170 420 L 170 250 L 200 250 L 200 420 L 230 420 L 230 250 L 260 250 L 260 420 L 330 420 L 310 200 L 280 110' fill='%23F59E0B' stroke='%23333' stroke-width='2'/%3E%3Cpath d='M 120 120 L 40 140 L 40 280 L 120 220' fill='%23F59E0B' stroke='%23333' stroke-width='1.5'/%3E%3Cpath d='M 280 120 L 360 140 L 360 280 L 280 220' fill='%23F59E0B' stroke='%23333' stroke-width='1.5'/%3E%3Cellipse cx='200' cy='85' rx='40' ry='35' fill='none' stroke='%23333' stroke-width='2.5'/%3E%3Ccircle cx='200' cy='140' r='15' fill='%23EC4899' opacity='0.8'/%3E%3C/svg%3E",
+    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=800&fit=crop&q=80",
     description:
       "Elevated crewneck sweatshirt with intricate embroidered college insignia. Perfect for layering or wearing solo, this piece combines style and comfort.",
     details: [
@@ -133,7 +133,7 @@ const productData = {
     price: 9.99,
     college: "Berkeley",
     category: "Stickers",
-    image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect fill='%23f0f0f0' width='400' height='400'/%3E%3Crect x='80' y='80' width='240' height='240' fill='%2310B981' stroke='%23333' stroke-width='2' rx='8'/%3E%3Ccircle cx='140' cy='130' r='25' fill='%23FFD700' stroke='%23333' stroke-width='1.5'/%3E%3Cpath d='M 140 105 L 145 115 L 155 115 L 147 122 L 150 135 L 140 130 L 130 135 L 133 122 L 125 115 L 135 115 Z' fill='%23FFA500'/%3E%3Crect x='200' y='100' width='40' height='40' fill='%23FF6B9D' stroke='%23333' stroke-width='1.5' rx='4' transform='rotate(15 220 120)'/%3E%3Cpath d='M 110 230 L 120 210 L 130 230 Z' fill='%23FF6B9D' stroke='%23333' stroke-width='1.5'/%3E%3Ccircle cx='240' cy='240' r='20' fill='%235D8AA8' stroke='%23333' stroke-width='1.5'/%3E%3Ccircle cx='160' cy='280' r='18' fill='%23FFD700' stroke='%23333' stroke-width='1.5'/%3E%3C/svg%3E",
+    image: "https://images.unsplash.com/photo-1608235175706-2a51ade2d06c?w=800&h=800&fit=crop&q=80",
     description:
       "Decorate your laptop, water bottle, or anywhere with our vibrant college-themed sticker pack. 10 unique designs celebrating campus life.",
     details: [
