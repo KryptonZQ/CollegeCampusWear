@@ -10,7 +10,7 @@ const products = [
     price: 59.99,
     category: "Hoodies",
     college: "Stanford",
-    image: "https://images.unsplash.com/photo-1543163521-9733539c2d7f?w=500&h=500&fit=crop&q=80",
+    image: "https://cdn.shopify.com/s/files/1/0570/1674/2601/products/1_750x.jpg?v=1630703840",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const products = [
     price: 29.99,
     category: "Caps",
     college: "MIT",
-    image: "https://images.unsplash.com/photo-1588195538326-c5b1e6f2e5c5?w=500&h=500&fit=crop&q=80",
+    image: "https://cdn.shopify.com/s/files/1/0076/5196/7846/products/product-image-768419201_5c2c1240-b894-4d37-9f7b-20f74e07c84d_500x.jpg",
   },
   {
     id: 4,
