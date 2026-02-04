@@ -59,7 +59,7 @@ const productData = {
     price: 29.99,
     college: "MIT",
     category: "Caps",
-    image: "https://images.unsplash.com/photo-1588195538326-c5b1e6f2e5c5?w=800&h=800&fit=crop",
+    image: "https://picsum.photos/800/800?random=3",
     description:
       "Classic vintage-style cap with embroidered college logo. Perfect for sunny days and casual outings. Features adjustable strap for the perfect fit.",
     details: [
@@ -84,7 +84,7 @@ const productData = {
     price: 44.99,
     college: "Yale",
     category: "Bags",
-    image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&h=800&fit=crop",
+    image: "https://picsum.photos/800/800?random=4",
     description:
       "Spacious and stylish tote bag perfect for campus life. Made from durable canvas material with reinforced handles and embroidered college details.",
     details: [
@@ -108,7 +108,7 @@ const productData = {
     price: 54.99,
     college: "Princeton",
     category: "Sweatshirts",
-    image: "https://images.unsplash.com/photo-1556821552-7f41c5d440db?w=800&h=800&fit=crop",
+    image: "https://picsum.photos/800/800?random=5",
     description:
       "Elevated crewneck sweatshirt with intricate embroidered college insignia. Perfect for layering or wearing solo, this piece combines style and comfort.",
     details: [
@@ -133,7 +133,7 @@ const productData = {
     price: 9.99,
     college: "Berkeley",
     category: "Stickers",
-    image: "https://images.unsplash.com/photo-1578208541519-1e1e00e8d5b4?w=800&h=800&fit=crop",
+    image: "https://picsum.photos/800/800?random=6",
     description:
       "Decorate your laptop, water bottle, or anywhere with our vibrant college-themed sticker pack. 10 unique designs celebrating campus life.",
     details: [
