@@ -174,8 +174,19 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="relative h-96 sm:h-[500px] rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-              <div className="text-8xl">👕</div>
+            <div className="relative h-96 sm:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+              <svg viewBox="0 0 600 600" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style={{ stopColor: '#4F46E5', stopOpacity: 1 }} />
+                    <stop offset="100%" style={{ stopColor: '#EC4899', stopOpacity: 1 }} />
+                  </linearGradient>
+                </defs>
+                <rect fill="url(#grad)" width="600" height="600" />
+                <path d="M 180 200 L 160 280 L 160 550 L 240 550 L 240 320 L 300 320 L 300 550 L 360 550 L 360 320 L 420 320 L 420 280 L 400 200 Z" fill="white" stroke="#333" strokeWidth="3" />
+                <circle cx="220" cy="180" r="50" fill="white" stroke="#333" strokeWidth="3" />
+                <path d="M 220 130 Q 200 115 170 125" stroke="white" strokeWidth="4" fill="none" strokeLinecap="round" />
+              </svg>
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
           </div>
