@@ -183,9 +183,16 @@ export default function Index() {
                   </linearGradient>
                 </defs>
                 <rect fill="url(#grad)" width="600" height="600" />
-                <path d="M 180 200 L 160 280 L 160 550 L 240 550 L 240 320 L 300 320 L 300 550 L 360 550 L 360 320 L 420 320 L 420 280 L 400 200 Z" fill="white" stroke="#333" strokeWidth="3" />
-                <circle cx="220" cy="180" r="50" fill="white" stroke="#333" strokeWidth="3" />
-                <path d="M 220 130 Q 200 115 170 125" stroke="white" strokeWidth="4" fill="none" strokeLinecap="round" />
+                {/* Hood */}
+                <ellipse cx="300" cy="150" rx="90" ry="100" fill="white" opacity="0.9"/>
+                {/* Body */}
+                <path d="M 210 220 L 180 300 Q 180 320 210 330 L 210 530 L 270 530 L 270 360 L 300 360 L 300 530 L 330 530 L 330 330 Q 360 320 360 300 L 330 220" fill="white" stroke="white" strokeWidth="2"/>
+                {/* Sleeves */}
+                <path d="M 210 230 L 120 250 L 120 420 L 210 360" fill="white" opacity="0.95"/>
+                <path d="M 390 230 L 480 250 L 480 420 L 390 360" fill="white" opacity="0.95"/>
+                {/* Drawstrings */}
+                <line x1="285" y1="150" x2="250" y2="200" stroke="white" strokeWidth="4" strokeLinecap="round"/>
+                <line x1="315" y1="150" x2="350" y2="200" stroke="white" strokeWidth="4" strokeLinecap="round"/>
               </svg>
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
