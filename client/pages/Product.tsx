@@ -9,7 +9,7 @@ const productData = {
     price: 59.99,
     college: "Stanford",
     category: "Hoodies",
-    image: "https://images.unsplash.com/photo-1556821552-7f41c5d440db?w=800&h=800&fit=crop&q=80",
+    image: "https://images.unsplash.com/photo-1574456566174-7e94e01a2591?w=800&h=800&fit=crop&q=80",
     description:
       "Our signature college hoodie is the perfect way to rep your campus. Made from premium 100% cotton blend fabric with a soft fleece interior, this hoodie offers unmatched comfort and durability. Features embroidered college details and a modern oversized fit.",
     details: [
@@ -59,7 +59,7 @@ const productData = {
     price: 29.99,
     college: "MIT",
     category: "Caps",
-    image: "https://images.unsplash.com/photo-1588195538326-c5b1e6f2e5c5?w=800&h=800&fit=crop&q=80",
+    image: "https://images.unsplash.com/photo-1625991417033-f2daf5b76c45?w=800&h=800&fit=crop&q=80",
     description:
       "Classic vintage-style cap with embroidered college logo. Perfect for sunny days and casual outings. Features adjustable strap for the perfect fit.",
     details: [
@@ -133,7 +133,7 @@ const productData = {
     price: 9.99,
     college: "Berkeley",
     category: "Stickers",
-    image: "https://images.unsplash.com/photo-1608235175706-2a51ade2d06c?w=800&h=800&fit=crop&q=80",
+    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&h=800&fit=crop&q=80",
     description:
       "Decorate your laptop, water bottle, or anywhere with our vibrant college-themed sticker pack. 10 unique designs celebrating campus life.",
     details: [
