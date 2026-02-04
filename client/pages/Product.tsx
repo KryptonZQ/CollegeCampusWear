@@ -9,7 +9,8 @@ const productData = {
     price: 59.99,
     college: "Stanford",
     category: "Hoodies",
-    image: "https://images.unsplash.com/photo-1543163521-9733539c2d7f?w=800&h=800&fit=crop&q=80",
+    image:
+      "https://images.unsplash.com/photo-1543163521-9733539c2d7f?w=800&h=800&fit=crop&q=80",
     description:
       "Our signature college hoodie is the perfect way to rep your campus. Made from premium 100% cotton blend fabric with a soft fleece interior, this hoodie offers unmatched comfort and durability. Features embroidered college details and a modern oversized fit.",
     details: [
@@ -34,7 +35,8 @@ const productData = {
     price: 34.99,
     college: "Harvard",
     category: "T-Shirts",
-    image: "https://images.unsplash.com/photo-1503341455253-b2e723bb6dbb?w=800&h=800&fit=crop&q=80",
+    image:
+      "https://images.unsplash.com/photo-1503341455253-b2e723bb6dbb?w=800&h=800&fit=crop&q=80",
     description:
       "Make a statement with our oversized graphic tee featuring bold college-inspired artwork. Crafted from breathable 100% organic cotton, it's perfect for casual wear and comfortable all day long.",
     details: [
@@ -59,7 +61,8 @@ const productData = {
     price: 29.99,
     college: "MIT",
     category: "Caps",
-    image: "https://images.unsplash.com/photo-1625991417033-f2daf5b76c45?w=800&h=800&fit=crop&q=80",
+    image:
+      "https://images.unsplash.com/photo-1625991417033-f2daf5b76c45?w=800&h=800&fit=crop&q=80",
     description:
       "Classic vintage-style cap with embroidered college logo. Perfect for sunny days and casual outings. Features adjustable strap for the perfect fit.",
     details: [
@@ -84,7 +87,8 @@ const productData = {
     price: 44.99,
     college: "Yale",
     category: "Bags",
-    image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&h=800&fit=crop&q=80",
+    image:
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&h=800&fit=crop&q=80",
     description:
       "Spacious and stylish tote bag perfect for campus life. Made from durable canvas material with reinforced handles and embroidered college details.",
     details: [
@@ -94,7 +98,7 @@ const productData = {
       "Interior slip pocket",
       "Comfortable shoulder handles",
       "Eco-friendly material",
-      "14.5\" x 14\" size",
+      '14.5" x 14" size',
     ],
     colors: [
       { name: "Natural Canvas", hex: "#e8d7c3" },
@@ -108,7 +112,8 @@ const productData = {
     price: 54.99,
     college: "Princeton",
     category: "Sweatshirts",
-    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=800&fit=crop&q=80",
+    image:
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=800&fit=crop&q=80",
     description:
       "Elevated crewneck sweatshirt with intricate embroidered college insignia. Perfect for layering or wearing solo, this piece combines style and comfort.",
     details: [
@@ -133,7 +138,8 @@ const productData = {
     price: 9.99,
     college: "Berkeley",
     category: "Stickers",
-    image: "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=800&h=800&fit=crop&q=80",
+    image:
+      "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=800&h=800&fit=crop&q=80",
     description:
       "Decorate your laptop, water bottle, or anywhere with our vibrant college-themed sticker pack. 10 unique designs celebrating campus life.",
     details: [
@@ -145,9 +151,7 @@ const productData = {
       "Perfect for laptops and bottles",
       "Celebrate your college pride",
     ],
-    colors: [
-      { name: "Multicolor", hex: "#multicolor" },
-    ],
+    colors: [{ name: "Multicolor", hex: "#multicolor" }],
     sizes: ["One Size"],
   },
 };
@@ -166,7 +170,10 @@ export default function Product() {
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition">
+          <Link
+            to="/"
+            className="flex items-center gap-2 hover:opacity-80 transition"
+          >
             <ChevronLeft className="w-5 h-5" />
             <span className="text-sm font-medium">Back</span>
           </Link>
@@ -230,7 +237,10 @@ export default function Product() {
                       : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                   }`}
                 >
-                  <Heart className="w-6 h-6" fill={isWishlisted ? "currentColor" : "none"} />
+                  <Heart
+                    className="w-6 h-6"
+                    fill={isWishlisted ? "currentColor" : "none"}
+                  />
                 </button>
               </div>
 
@@ -252,7 +262,9 @@ export default function Product() {
 
               {/* Color Selection */}
               <div className="space-y-3">
-                <label className="block font-semibold text-foreground">Color</label>
+                <label className="block font-semibold text-foreground">
+                  Color
+                </label>
                 <div className="flex gap-3 flex-wrap">
                   {product.colors.map((color) => (
                     <button
@@ -264,7 +276,8 @@ export default function Product() {
                           : "border-gray-300 hover:border-gray-400"
                       }`}
                       style={{
-                        backgroundColor: color.hex !== "#multicolor" ? color.hex : "white",
+                        backgroundColor:
+                          color.hex !== "#multicolor" ? color.hex : "white",
                       }}
                       title={color.name}
                     >
@@ -277,7 +290,9 @@ export default function Product() {
 
               {/* Size Selection */}
               <div className="space-y-3">
-                <label className="block font-semibold text-foreground">Size</label>
+                <label className="block font-semibold text-foreground">
+                  Size
+                </label>
                 <div className="grid grid-cols-3 gap-2 sm:grid-cols-4">
                   {product.sizes.map((size) => (
                     <button
@@ -297,7 +312,9 @@ export default function Product() {
 
               {/* Quantity */}
               <div className="space-y-3">
-                <label className="block font-semibold text-foreground">Quantity</label>
+                <label className="block font-semibold text-foreground">
+                  Quantity
+                </label>
                 <div className="flex items-center gap-4 bg-gray-100 rounded-lg w-fit p-2">
                   <button
                     onClick={() => setQuantity(Math.max(1, quantity - 1))}
@@ -319,10 +336,15 @@ export default function Product() {
 
               {/* Product Features */}
               <div className="space-y-3 pt-6 border-t border-gray-200">
-                <h3 className="font-semibold text-foreground">Product Details</h3>
+                <h3 className="font-semibold text-foreground">
+                  Product Details
+                </h3>
                 <ul className="grid grid-cols-2 gap-2">
                   {product.details.map((detail, index) => (
-                    <li key={index} className="text-sm text-gray-600 flex items-start gap-2">
+                    <li
+                      key={index}
+                      className="text-sm text-gray-600 flex items-start gap-2"
+                    >
                       <span className="text-primary font-bold">✓</span>
                       {detail}
                     </li>
@@ -339,7 +361,10 @@ export default function Product() {
               {/* Additional Info */}
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-sm text-blue-900">
                 <p className="font-semibold mb-1">Fast & Free Shipping</p>
-                <p>Free shipping on orders over $100. Returns accepted within 30 days.</p>
+                <p>
+                  Free shipping on orders over $100. Returns accepted within 30
+                  days.
+                </p>
               </div>
             </div>
           </div>
@@ -354,7 +379,8 @@ export default function Product() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[2, 3, 4].map((productId) => {
-              const relatedProduct = productData[productId as keyof typeof productData];
+              const relatedProduct =
+                productData[productId as keyof typeof productData];
               return (
                 <Link key={productId} to={`/product/${productId}`}>
                   <div className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer h-full flex flex-col">
@@ -400,7 +426,9 @@ export default function Product() {
               <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">CC</span>
               </div>
-              <span className="font-display font-bold text-white">CampusWear</span>
+              <span className="font-display font-bold text-white">
+                CampusWear
+              </span>
             </div>
             <p className="text-sm">© 2024 CampusWear. All rights reserved.</p>
           </div>

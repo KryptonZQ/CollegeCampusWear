@@ -1,6 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ShoppingCart, Mail, MapPin, Instagram, Twitter, ChevronRight } from "lucide-react";
+import {
+  ShoppingCart,
+  Mail,
+  MapPin,
+  Instagram,
+  Twitter,
+  ChevronRight,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const products = [
@@ -10,7 +17,8 @@ const products = [
     price: 59.99,
     category: "Hoodies",
     college: "Stanford",
-    image: "https://cdn.shopify.com/s/files/1/0570/1674/2601/products/1_750x.jpg?v=1630703840",
+    image:
+      "https://cdn.shopify.com/s/files/1/0570/1674/2601/products/1_750x.jpg?v=1630703840",
   },
   {
     id: 2,
@@ -18,7 +26,8 @@ const products = [
     price: 34.99,
     category: "T-Shirts",
     college: "Harvard",
-    image: "https://images.unsplash.com/photo-1503341455253-b2e723bb6dbb?w=500&h=500&fit=crop&q=80",
+    image:
+      "https://images.unsplash.com/photo-1503341455253-b2e723bb6dbb?w=500&h=500&fit=crop&q=80",
   },
   {
     id: 3,
@@ -26,7 +35,8 @@ const products = [
     price: 29.99,
     category: "Caps",
     college: "MIT",
-    image: "https://cdn.shopify.com/s/files/1/0076/5196/7846/products/product-image-768419201_5c2c1240-b894-4d37-9f7b-20f74e07c84d_500x.jpg",
+    image:
+      "https://cdn.shopify.com/s/files/1/0076/5196/7846/products/product-image-768419201_5c2c1240-b894-4d37-9f7b-20f74e07c84d_500x.jpg",
   },
   {
     id: 4,
@@ -34,7 +44,8 @@ const products = [
     price: 44.99,
     category: "Bags",
     college: "Yale",
-    image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500&h=500&fit=crop&q=80",
+    image:
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500&h=500&fit=crop&q=80",
   },
   {
     id: 5,
@@ -42,7 +53,8 @@ const products = [
     price: 54.99,
     category: "Sweatshirts",
     college: "Princeton",
-    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=500&fit=crop&q=80",
+    image:
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=500&fit=crop&q=80",
   },
   {
     id: 6,
@@ -50,7 +62,8 @@ const products = [
     price: 9.99,
     category: "Stickers",
     college: "Berkeley",
-    image: "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=500&h=500&fit=crop&q=80",
+    image:
+      "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=500&h=500&fit=crop&q=80",
   },
 ];
 
@@ -99,13 +112,22 @@ export default function Index() {
             </span>
           </div>
           <div className="flex items-center gap-6">
-            <a href="#products" className="text-sm font-medium text-gray-300 hover:text-primary transition">
+            <a
+              href="#products"
+              className="text-sm font-medium text-gray-300 hover:text-primary transition"
+            >
               Products
             </a>
-            <a href="#offers" className="text-sm font-medium text-gray-300 hover:text-primary transition">
+            <a
+              href="#offers"
+              className="text-sm font-medium text-gray-300 hover:text-primary transition"
+            >
               Bundles
             </a>
-            <a href="#contact" className="text-sm font-medium text-gray-300 hover:text-primary transition">
+            <a
+              href="#contact"
+              className="text-sm font-medium text-gray-300 hover:text-primary transition"
+            >
               Contact
             </a>
             <div className="relative">
@@ -145,7 +167,9 @@ export default function Index() {
                 </h1>
 
                 <p className="text-lg sm:text-xl text-gray-400 leading-relaxed max-w-lg">
-                  Bold styles. Premium quality. Designed for students who stand out. Join thousands of college students already repping their campus in style.
+                  Bold styles. Premium quality. Designed for students who stand
+                  out. Join thousands of college students already repping their
+                  campus in style.
                 </p>
               </div>
 
@@ -199,7 +223,10 @@ export default function Index() {
       </section>
 
       {/* Products Section */}
-      <section id="products" className="py-24 bg-gradient-to-b from-background via-background to-primary/5">
+      <section
+        id="products"
+        className="py-24 bg-gradient-to-b from-background via-background to-primary/5"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-20">
             <h2 className="font-display font-bold text-4xl sm:text-5xl text-white">
@@ -294,7 +321,10 @@ export default function Index() {
                         ${offer.salePrice.toFixed(2)}
                       </span>
                       <span className="text-xs text-primary font-semibold">
-                        {Math.round((offer.savings / offer.originalPrice) * 100)}% OFF
+                        {Math.round(
+                          (offer.savings / offer.originalPrice) * 100,
+                        )}
+                        % OFF
                       </span>
                     </div>
                   </div>
@@ -310,7 +340,10 @@ export default function Index() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24 bg-gradient-to-b from-background to-primary/5 border-t border-primary/20">
+      <section
+        id="contact"
+        className="py-24 bg-gradient-to-b from-background to-primary/5 border-t border-primary/20"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -319,7 +352,8 @@ export default function Index() {
                   Get in Touch
                 </h2>
                 <p className="text-lg text-gray-400 leading-relaxed">
-                  Have questions? Want to collaborate? We're here to help you rep your college style.
+                  Have questions? Want to collaborate? We're here to help you
+                  rep your college style.
                 </p>
               </div>
 
@@ -328,7 +362,10 @@ export default function Index() {
                   <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-white">Email</p>
-                    <a href="mailto:hello@campuswear.com" className="text-gray-400 hover:text-primary transition">
+                    <a
+                      href="mailto:hello@campuswear.com"
+                      className="text-gray-400 hover:text-primary transition"
+                    >
                       hello@campuswear.com
                     </a>
                   </div>
@@ -343,10 +380,16 @@ export default function Index() {
               </div>
 
               <div className="flex gap-4">
-                <a href="#" className="bg-primary hover:bg-opacity-90 text-foreground p-3 rounded-lg transition">
+                <a
+                  href="#"
+                  className="bg-primary hover:bg-opacity-90 text-foreground p-3 rounded-lg transition"
+                >
                   <Instagram className="w-5 h-5" />
                 </a>
-                <a href="#" className="bg-primary hover:bg-opacity-90 text-foreground p-3 rounded-lg transition">
+                <a
+                  href="#"
+                  className="bg-primary hover:bg-opacity-90 text-foreground p-3 rounded-lg transition"
+                >
                   <Twitter className="w-5 h-5" />
                 </a>
               </div>
@@ -355,7 +398,9 @@ export default function Index() {
             <div className="bg-card/50 backdrop-blur-sm border border-primary/30 rounded-xl p-8">
               <form className="space-y-6">
                 <div>
-                  <label className="block text-sm font-semibold text-white mb-2">Name</label>
+                  <label className="block text-sm font-semibold text-white mb-2">
+                    Name
+                  </label>
                   <input
                     type="text"
                     placeholder="Your name"
@@ -363,7 +408,9 @@ export default function Index() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-white mb-2">Email</label>
+                  <label className="block text-sm font-semibold text-white mb-2">
+                    Email
+                  </label>
                   <input
                     type="email"
                     placeholder="your@email.com"
@@ -371,7 +418,9 @@ export default function Index() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-white mb-2">College Name</label>
+                  <label className="block text-sm font-semibold text-white mb-2">
+                    College Name
+                  </label>
                   <input
                     type="text"
                     placeholder="Your college"
@@ -379,7 +428,9 @@ export default function Index() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-white mb-2">Message</label>
+                  <label className="block text-sm font-semibold text-white mb-2">
+                    Message
+                  </label>
                   <textarea
                     placeholder="Your message"
                     rows={4}
@@ -403,9 +454,13 @@ export default function Index() {
               <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
                 <span className="text-foreground font-bold text-sm">CC</span>
               </div>
-              <span className="font-display font-bold text-primary">CAMPUSWEAR</span>
+              <span className="font-display font-bold text-primary">
+                CAMPUSWEAR
+              </span>
             </div>
-            <p className="text-sm text-gray-500">© 2024 CampusWear. All rights reserved.</p>
+            <p className="text-sm text-gray-500">
+              © 2024 CampusWear. All rights reserved.
+            </p>
           </div>
         </div>
       </footer>
